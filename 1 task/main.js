@@ -6,13 +6,36 @@ let buttonDel= document.getElementById('btnDel');
 let ul = document.getElementById('list');
 
 buttonAdd.addEventListener('click', () => {
-    let value = input.value;
-    if (value) {
-        let li = document.createElement('li');
-        li.innerText = value;
-        ul.appendChild(li);
-        input.value = '';
+    let inputValue = input.value
+
+    if (!inputValue.includes('=')) {
+        return;
     }
+
+    let parts = inputValue.split('=');
+
+    if (parts.length !== 2) {
+        return;
+    }
+
+    let name = parts[0].trim();
+    let value = parts[1].trim();
+
+    if (name === '' || value === '') {
+        return;
+    }
+
+    let regex = /^[a-zA-Z0-9]+$/;
+    if (!regex.test(name) || !regex.test(value))  {
+        return;
+    }
+
+    let li = document.createElement('li');
+    li.innerText =  `${name}=${value}`;
+    ul.appendChild(li);
+
+    input.value = '';
+
 });
 
 buttonSrtName.addEventListener('click', () => {
