@@ -1,0 +1,9 @@
+.top-block{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+input{
+    display: flex;
+    flex-direction: column;
+}

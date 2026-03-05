@@ -9,22 +9,24 @@
 </head>
 <body>
 <h2>Test</h2>
-
-<label for="nameValueId">Name/Value Pair
-    <input type="text" id="nameValueId" name="nameValue" placeholder="Name=Value">
-</label>
-
-<button id="btnAdd">Add</button>
-<button id="btnSrtName">Sort by Name</button>
-<button id="btnSrtVal">Sort by Value</button>
-<button id="btnDel">Delete</button>
+<div class="top-block">
+    <div class="input-block">
+        <label for="nameValueId">Name/Value Pair</label>
+        <input type="text" id="nameValueId" name="nameValue" placeholder="Name=Value">
+    </div>
+    <button id="btnAdd">Add</button>
+</div>
 
 <p>Name/Value Pair List</p>
 
-<div class="letter">
+<div class="bottom-block">
     <ul id="list"></ul>
+    <div class="buttons">
+<button id="btnSrtName">Sort by Name</button>
+<button id="btnSrtVal">Sort by Value</button>
+<button id="btnDel">Delete</button>
 </div>
-
+</div>
 
 
 <script src="main.js"></script>
