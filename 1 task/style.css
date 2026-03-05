@@ -1,0 +1,37 @@
+.top-block{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+input{
+    display: flex;
+    flex-direction: column;
+    width: 435px;
+}
+ul{
+    width: 440px;
+    height: 440px;
+    border: 1px solid black;
+    list-style: none;
+}
+.bottom-block{
+    display: flex;
+    gap: 40px;
+}
+
+
+
+
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+#btnSrtName{
+    margin-bottom: 10px;
+}
+#btnSrtVal{
+    margin-bottom: 15px;
+}
+
