@@ -8,31 +8,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrapper">
 <h2>Test</h2>
 
-<label for="nameValueId">Name/Value Pair</label>
+<label for="nameValueId">Name/Value Pair
+    <input type="text" id="nameValueId" name="nameValue" placeholder="Name=Value">
+</label>
 
-<div class="top-block">
-    <div class="input-block">
-        <input type="text" id="nameValueId" name="nameValue" placeholder="Name=Value">
-    </div>
-        <button id="btnAdd">Add</button>
+<button id="btnAdd">Add</button>
+<button id="btnSrtName">Sort by Name</button>
+<button id="btnSrtVal">Sort by Value</button>
+<button id="btnDel">Delete</button>
+
+<p>Name/Value Pair List</p>
+
+<div class="letter">
+    <ul id="list"></ul>
 </div>
 
-<div class="bottom-block">
-    <div class="list-container">
-        <label>Name/Value Pair List</label>
-        <ul id="list"></ul>
-    </div>
 
-    <div class="buttons">
-        <button id="btnSrtName">Sort by Name</button>
-        <button id="btnSrtVal">Sort by Value</button>
-        <button id="btnDel">Delete</button>
-    </div>
-</div>
-</div>
 
 <script src="main.js"></script>
 
