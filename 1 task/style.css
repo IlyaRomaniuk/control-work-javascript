@@ -19,14 +19,11 @@ ul{
     list-style: none;
 }
 
-
-
 .bottom-block{
     display: flex;
     gap: 40px;
     padding-top: 15px;
 }
-
 
 .buttons{
     display: flex;

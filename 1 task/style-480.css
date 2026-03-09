@@ -1,0 +1,34 @@
+@media screen and (max-width: 480px) {
+    .wrapper{
+        padding: 5px 0 0 10px;
+    }
+    input{
+        width: 100%;
+        max-width: 300px;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        max-width: 100%;
+        height: 300px;
+        border: 1px solid black;
+        list-style: none;
+    }
+    .bottom-block{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+    .buttons button{
+        /*gap: 5px;*/
+        padding: 5px 0 5px 0;
+    }
+    #btnSrtVal{
+        margin-bottom: 10px;
+    }
+}
